@@ -3,7 +3,7 @@ data <- read.csv('Customer_Sales_1_Dirty.csv')
 head(data)
 
 library(RMySQL)
-con <- dbConnect(MySQL(),user="root", password="mickey1992",dbname="dwh", host="localhost")
+con <- dbConnect(MySQL(),user="****", password="****",dbname="*****", host="****")
 rs <- dbSendQuery(con, "
 select a.ID,
 case when concat('',a.Sales_Rep_id * 1) <>  a.Sales_Rep_id then 1 else 0 end as Sales_Rep_Error,
