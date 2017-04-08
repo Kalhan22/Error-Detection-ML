@@ -6,7 +6,7 @@ setwd('/Users/Kalhan/Desktop/Waterloo Data/Winter 2017/BigData/Project')
 data <- read.csv('Customer_Sales_1_Dirty.csv')
 head(data)
 library(RMySQL)
-con <- dbConnect(MySQL(),user="root", password="mickey1992",dbname="DWH", host="localhost")
+con <- dbConnect(MySQL(),user="****", password="*****",dbname="*****", host="*****")
 
 rs <- dbSendQuery(con, "
                   select a.ID,
